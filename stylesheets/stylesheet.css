@@ -27,6 +27,7 @@ a {
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
   .btn + .btn {
     margin-left: 1rem; }
+
 /*Added by me */
 .btn2 {
   border-radius: 4px;
@@ -64,6 +65,38 @@ a {
 
 .btnForward:hover span:after {
   opacity: 1;
+  right: 0;
+}
+
+.btnBack:hover span {
+  padding-left: 25px;
+}
+
+.btnBack span:before {
+  content: '<<';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.btnBack:hover span:before {
+  opacity: 1;
+  left: 0;
+}
+
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+/*end added by me*/
+
+  
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
